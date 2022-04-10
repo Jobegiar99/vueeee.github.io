@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Vue 6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="./app.js" defer></script>
+</head>
+    <body>
+        <div id="app" class = "container">
+            
+            <button v-if="notGeneratedDex" v-on:click="generatePokedex">Generar Pokedex</button>
+            <h1 v-if="show" align = "center">Pokedex  <br><h3 v-if="show" align = "center">Haz click en la imagen para ver la wiki <br>  {{pokemonInfo}}</h3></h1>
+            <div class = "grid">
+                <div class = "row">
+                    <div id="pokedex" class ="col-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
